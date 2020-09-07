@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Order</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form" action="/order" method="POST">
+					<span class="contact3-form-title">
+						Order
+					</span>
+					<span class="container">
+						<%foods.forEach((food)=>{%>
+						<p class="h4 text-white "><%=food.name%><span class="pull-right">
+								Value
+								:<%=food.value%></span>
+						</p>
+						<%});%>
+						<span>
+
+							<div class="wrap-contact3-form-radio">
+								<div class="contact3-form-radio m-r-42">
+									<input class="input-radio3" id="radio1" type="radio" name="choice" value="say-hi"
+										checked="checked">
+									<label class="label-radio3 text-center" for="radio1">
+										Home Address
+									</label>
+								</div>
+
+
+							</div>
+							<div class="wrap-input3 validate-input" data-validate="Name is required">
+								<input class="input3" type="text" name="info[name]" placeholder="Your Name">
+								<span class="focus-input3"></span>
+							</div>
+
+							<div class="wrap-input3 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+								<input class="input3" type="text" name="info[email]" placeholder="Your Email">
+								<span class="focus-input3"></span>
+							</div>
+
+							<div class="wrap-input3">
+								<div>
+									<select class="selection-2" name="info[method]">
+										<option>Cash on Delivery</option>
+										<option>NetBanking</option>
+										<option>Credit Card</option>
+										<option>Debit Card</option>
+									</select>
+								</div>
+								<span class="focus-input3"></span>
+							</div>
+
+							<div class="wrap-input3 validate-input" data-validate="Message is required">
+								<textarea class="input3" name="info[address]" placeholder="Your Address"></textarea>
+								<span class="focus-input3"></span>
+							</div>
+
+							<div class="container-contact3-form-btn">
+								<button class="contact3-form-btn" type="submit">
+									Submit
+								</button>
+							</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="vendor/bootstrap/js/popper.js"></script>
+
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+	<script src="js/main.js"></script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+
+	</script>
+
+</body>
+
+</html>

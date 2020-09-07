@@ -1,0 +1,496 @@
+<%include ./partials/header%>
+
+
+<!--First image container-->
+<div id="index-banner" class="parallax-container border">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2"></h1>
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax square z-depth-3"><img src="images/menu.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container">
+  <!-- First container containing the top items-->
+  <div class="section">
+    <form action="/menu" method="POST" id="form1">
+      <!--   Icon Section   -->
+      <!-- First column of itemss-->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><img src="images/salad.png"></h2>
+            <h5 class="center">Salad</h5>
+            <hr color="black">
+
+            <p class="dark">
+              <ul>
+                <li>
+                  <h6>Green Goddess Salad<span style="float:right">$11.17</span></h6>
+                </li>
+                <li class="light">Baby Lettuces,Cucumber,Tomato<button type="submit" form="form1" name="order[name]"
+                    value="Green Goddess Salad" style="float:right" id="green_salad"
+                    class="btn-floating btn-small waves-effect waves-light black"><i
+                      class="material-icons">add</i></button></li>
+                <li class="light">SunFlower Seeds & Sprouts</li>
+                <br>
+    </form>
+    <li>
+      <h6>Shaved Celery Salad<span style="float: right">$12.97</span></h6>
+    </li>
+    <li class="light">Fennel,Castelventrano Olives,</li>
+    <li class="light">Preserved Lemon Vinalgrette &<button type="submit" form="form1" name="order[name]"
+        value="Shaved Celery Salad" style="float:right" id="shaved_salad"
+        class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button></li>
+    </li>
+    <li class="light">Ricotta Salata</li>
+    <br>
+    <li>
+      <h6>Charred Bean Salad<span style="float:right">$11.99</span></h6>
+    </li>
+    <li class="light">Bitter Greens,Heirloom Tomatoes,<button type="submit" form="form1" name="order[name]"
+        value="Charred Bean Salad" style="float: right" id="bean_salad"
+        class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button></li>
+    </li>
+    <li class="light">Anchovy Tarragon Vinalgrette</li>
+    </ul>
+    </p>
+  </div>
+</div>
+
+<!--Second column -->
+
+<div class="col s12 m4">
+  <div class="icon-block">
+    <h2 class="center brown-text"><img src="images/snacks.png"></h2>
+    <h5 class="center">Snacks</h5>
+    <hr color="black">
+
+    <p class="dark">
+      <ul>
+        <li>
+          <h6>French Fries<span style="float: right">$4.57</span></h6>
+        </li>
+        <li class="light">Potatoes,Vegetable Oil<button type="submit" form="form1" name="order[name]"
+            value="French Fries" style="float:right" id="french_fries"
+            class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button>
+        </li>
+        </li>
+        <li class="light">Salted</li>
+        <br>
+        <li>
+          <h6>Snap Pea Succotash<span style="float:right">$5.60</span></h6>
+        </li>
+        <li class="light">Sugar Snap Peas,Cumin<button type="submit" name="order[name]" value="Snap Pea Succotash"
+            style="float :right" id="pea" class="btn-floating btn-small waves-effect waves-light black"><i
+              class="material-icons">add</i></button></li>
+        </li>
+        <li class="light">Whole Kernel Corn & Thawed</li>
+        <br>
+        <li>
+          <h6>Braised Greens<span style="float: right">$4.33</span></h6>
+        </li>
+        <li class="light">Chicken Broth,Sprigs Fresh Lemon<button type="submit" form="form1" name="order[name]"
+            value="Braised Greens" style="float: right" id="braised_green"
+            class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button>
+        </li>
+        </li>
+        <li class="light">Ground Black Pepper & Lemon</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<!-- Third column-->
+
+<div class="col s12 m4">
+  <div class="icon-block">
+    <h2 class="center brown-text"><img src="images/main_course.png"></h2>
+    <h5 class="center">Main Course</h5>
+    <hr color="black">
+
+    <p class="dark">
+      <ul>
+        <li>
+          <h6>Spring Fed Rainbow Trout<span style="float: right">$18.27</span></h6>
+        </li>
+        <li class="light">Sugar Snap Pea Succotash<button type="submit" form="form1" name="order[name]"
+            value="Spring Fed Rainbow Trout" style="float:right" id="trout"
+            class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button>
+        </li>
+        </li>
+        <li class="light">Corn Broth & Pea Tendrils</li>
+        <br>
+        <li>
+          <h6>Harissa Chicken<span style="float: right">$16.11</span></h6>
+        </li>
+        <li class="light">Herb Panzanella<button type="submit" form="form1" name="order[name]" value="Harissa Chicken"
+            style="float: right" id="chicken" class="btn-floating btn-small waves-effect waves-light black"><i
+              class="material-icons">add</i></button></li>
+        </li>
+        <br>
+        <li>
+          <h6>Farro Risotto<span style="float: right;">$21.79</span></h6>
+        </li>
+        <li class="light">Swiss Chord,Spiced Tomato,<button type="submit" form="form1" name="order[name]"
+            value="Farro Risotto" style="float: right;" id="risotto"
+            class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button>
+        </li>
+        </li>
+        <li class="light">Fera & Olives</li>
+        <br>
+        <li>
+          <h6>Simple Pasta<span style="float:right">$15.69</span></h6>
+        </li>
+        <li class="light">Anchovy,Garlic,Parmesian<button type="submit" form="form1" name="order[name]"
+            value="Simple Pasta" style="float:right" id="pasta"
+            class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">add</i></button>
+        </li>
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+  <!-- Second Container containing the second row of menu-->
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <!-- First column-->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/baked.png"></h2>
+          <h5 class="center">Baked</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>Green Goddess Salad<span style="float:right">$11.17</span></h6>
+              </li>
+              <li class="light">Baby Lettuces,Cucumber,Tomato<button type="submit" form="form1" name="order[name]"
+                  value="Green Goddess Salad" style="float:right" id="green_salad2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              <li class="light">SunFlower Seeds & Sprouts</li>
+              <br>
+              <li>
+                <h6>Shaved Celery Salad<span style="float:right">$12.97</span></h6>
+              </li>
+              <li class="light">Fennel,Castelventrano Olives,</li>
+              <li class="light">Preserved Lemon Vinalgrette &<button type="submit" form="form1" name="order[name]"
+                  value="Shaved Celery Salad" style="float :right" id="shaved_salad2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Ricotta Salata</li>
+              <br>
+              <li>
+                <h6>Charred Bean Salad<span style="float:right">$11.99</span></h6>
+              </li>
+              <li class="light">Bitter Greens,Heirloom Tomatoes,<button type="submit" form="form1" name="order[name]"
+                  value="Charred Bean Salad" style="float: right" id="bean_salad2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Anchovy Tarragon Vinalgrette</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!--Second column -->
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/bread.png"></h2>
+          <h5 class="center">Bread</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>Spring Fed Rainbow Trout<span style="float: right">$18.27</span></h6>
+              </li>
+              <li class="light">Sugar Snap Pea Succotash<button type="submit" form="form1" name="order[name]"
+                  value="Spring Fed Rainbow Trout" style="float: right" id="trout2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Corn Broth & Pea Tendrils</li>
+              <br>
+              <li>
+                <h6>Harissa Chicken<span style="float: right">$16.11</span></h6>
+              </li>
+              <li class="light">Herb Panzanella<button type="submit" form="form1" name="order[name]"
+                  value="Harissa Chicken" style="float: right" id="chicken2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <br>
+              <li>
+                <h6>Farro Risotto<span style="float: right">$21.79</span></h6>
+              </li>
+              <li class="light">Swiss Chord,Spiced Tomato,<button type="submit" form="form1" name="order[name]"
+                  value="Farro Risotto" style="float: right" id="risotto2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Fera & Olives</li>
+              <br>
+              <li>
+                <h6>Simple Pasta<span style="float: right">$15.69</span></h6>
+              </li>
+              <li class="light">Anchovy,Garlic,Parmesian<button type="submit" form="form1" name="order[name]"
+                  value="Simple Pasta" style="float: right" id="pasta2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!--Third column-->
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/fish.png"></h2>
+          <h5 class="center">Fish</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>French Fries<span style="float: right">$4.57</span></h6>
+              </li>
+              <li class="light">Potatoes,Vegetable Oil<button type="submit" form="form1" name="order[name]"
+                  value="French Fries" style="float:right" id="french_fries2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Salted</li>
+              <br>
+              <li>
+                <h6>Snap Pea Succotash<span style="float: right">$5.60</span></h6>
+              </li>
+              <li class="light">Sugar Snap Peas,Cumin<button type="submit" form="form1" name="order[name]"
+                  value="Snap Pea Succotash" style="float: right" id="pea2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Whole Kernel Corn & Thawed</li>
+              <br>
+              <li>
+                <h6>Braised Greens<span style="float: right">$4.33</span></h6>
+              </li>
+              <li class="light">Chicken Broth,Sprigs Fresh LemonLemon<button type="submit" form="form1"
+                  name="order[name]" value="Braised Greens" style="float: right" id="braised_green2"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">Ground Black Pepper & Lemon</li>
+            </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third container containing the third section of menu-->
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+
+      <!--   Icon Section   -->
+      <!-- First column-->
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/candy.png"></h2>
+          <h5 class="center">Candy</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>French Fries<span style="float: right">$4.33</span></h6>
+              </li>
+              <li class="light">Potatoes,Vegetable Oil<button type="submit" form="form1" name="order[name]"
+                  value="French Fries" style="float: right" id="french_fries3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Salted</li>
+              <br>
+              <li>
+                <h6>Snap Pea Succotash<span style="float: right">$5.60</span></h6>
+              </li>
+              <li class="light">Sugar Snap Peas,Cumin<button type="submit" form="form1" name="order[name]"
+                  value="Snap Pea Succotash" style="float:right" id="pea3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Whole Kernel Corn & Thawed</li>
+              <br>
+              <li>
+                <h6>Braised Greens<span style="float :right">$4.57</span></h6>
+              </li>
+              <li class="light">Chicken Broth,Sprigs Fresh Lemon<button type="submit" form="form1" name="order[name]"
+                  value="Braised Greens" style="float: right" id="braised_green3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Ground Black Pepper & Lemon</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!--Second column -->
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/kabab.png"></h2>
+          <h5 class="center">Kebab</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>Spring Fed Rainbow Trout<span style="float: right">$18.27</span></h6>
+              </li>
+              <li class="light">Sugar Snap Pea Succotash<button type="submit" form="form1" name="order[name]"
+                  value="Spring Fed Rainbow Trout" style="float: right" id="trout3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Corn Broth & Pea Tendrils</li>
+              <br>
+              <li>
+                <h6>Harissa Chicken<span style="float: right">$16.11</span></h6>
+              </li>
+              <li class="light">Herb Panzanella<button type="submit" form="form1" name="order[name]"
+                  value="Harissa Chicken" style="float: right" id="chicken3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <br>
+              <li>
+                <h6>Farro Risotto<span style="float: right">$21.79</span></h6>
+              </li>
+              <li class="light">Swiss Chord,Spiced Tomato,<button type="submit" form="form1" name="order[name]"
+                  value="Farro Risotto" style="float: right" id="risotto3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Fera & Olives</li>
+              <br>
+              <li>
+                <h6>Simple Pasta<span style="float: right">$15.69</span></h6>
+              </li>
+              <li class="light">Anchovy,Garlic,Parmesian<button type="submit" form="form1" name="order[name]"
+                  value="Simple Pasta" style="float: right" id="pasta3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!--Third column-->
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><img src="images/ice_cream.png"></h2>
+          <h5 class="center">Ice Cream</h5>
+          <hr color="black">
+
+          <p class="dark">
+            <ul>
+              <li>
+                <h6>Green Goddess Salad<span style="float: right">$11.17</span></h6>
+              </li>
+              <li class="light">Baby Lettuces,Cucumber,Tomato<button type="submit" form="form1" name="order[name]"
+                  value="Green Goddess Salad" style="float: right" id="green_salad3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              <li class="light">SunFlower Seeds & Sprouts</li>
+              <br>
+              <li>
+                <h6>Shaved Celery Salad<span style="float: right">$12.97</span></h6>
+              </li>
+              <li class="light">Fennel,Castelventrano Olives,</li>
+              <li class="light">Preserved Lemon Vinalgrette &<button type="submit" form="form1" name="order[name]"
+                  value="Shaved Celery Salad" style="float:right" id="shaved_salad3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Ricotta Salata</li>
+              <br>
+              <li>
+                <h6>Charred Bean Salad<span style="float: right">$11.99</span></h6>
+              </li>
+              <li class="light">Bitter Greens,Heirloom Tomatoes,<button type="submit" form="form1" name="order[name]"
+                  value="Charred Bean Salad" style="float: right" id="bean_salad3"
+                  class="btn-floating btn-small waves-effect waves-light black"><i
+                    class="material-icons">add</i></button></li>
+              </li>
+              </li>
+              </li>
+              <li class="light">Anchovy Tarragon Vinalgrette</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </form>
+
+  <% include ./partials/footer %>

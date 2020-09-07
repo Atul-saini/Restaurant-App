@@ -1,0 +1,18 @@
+<%include ./partials/header%>
+  
+<!--Text sections-->
+  <div class="jumbotron text-xs-center">
+    <h1 class="display-3">Thank You,<%=Person.name%> for your order!</h1>
+    <p class="lead"><strong>Please wait </strong>till we ring your doorbell.</p>
+    <p class="lead">Your address is<strong> <%=Person.address%></strong></p>
+    <hr>
+    <p class="lead">Your email is <strong><%=Person.email%></strong></p>
+    <p>
+      Please share your feedback <a href="/feedback">Feedback</a>
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-sm" href="/" role="button">Continue to homepage</a>
+    </p>
+  </div>
+
+<% include ./partials/footer%>
